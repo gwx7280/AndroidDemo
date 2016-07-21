@@ -1,4 +1,4 @@
-package jimmy.com.mylibrary;
+package jimmy.com.mvp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

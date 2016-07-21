@@ -1,4 +1,4 @@
-package jimmy.com.mylibrary;
+package jimmy.com.mvp;
 
 import org.junit.Test;
 
