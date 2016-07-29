@@ -6,7 +6,6 @@ import android.content.Context;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import jimmy.com.androiddemo.DemoApplication;
 import jimmy.com.androiddemo.mvp.injector.ContextLife;
 import jimmy.com.androiddemo.mvp.injector.module.AppModule;
 
