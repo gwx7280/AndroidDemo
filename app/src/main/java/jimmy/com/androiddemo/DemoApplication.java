@@ -28,6 +28,10 @@ public class DemoApplication extends Application {
                 .build();
     }
 
+    public AppComponent getmApplicationComponent() {
+        return mApplicationComponent;
+    }
+
     public static DemoApplication getInstance() {
         return demoApplication;
     }

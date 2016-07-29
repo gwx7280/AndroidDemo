@@ -1,5 +1,7 @@
 package jimmy.com.androiddemo.mvp.injector.module;
 
+import android.app.Fragment;
+
 import dagger.Module;
 
 /**
@@ -7,4 +9,12 @@ import dagger.Module;
  */
 @Module
 public class FragmentModule {
+    private Fragment mFragment;
+
+    public FragmentModule(Fragment fragment) {
+        this.mFragment = fragment;
+    }
+
+
+
 }
