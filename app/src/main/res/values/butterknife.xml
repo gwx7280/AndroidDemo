@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_string">我是一个按钮</string>
+    <string name="textview_string">我是一个文本框</string>
+
+</resources>

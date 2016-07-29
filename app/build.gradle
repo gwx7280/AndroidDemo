@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//dagger2
+//dagger2,butterknife
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
@@ -13,6 +13,11 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    packagingOptions{
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -22,19 +27,19 @@ android {
     productFlavors {
     }
 }
-tasks.whenTaskAdded { task ->
-//    if (task.name.startsWith("create") && task.name.endsWith("MainDexClassList")) {
-    if (task.name.startsWith("transformClassesWithMultidexlistFor")) {
-        task.doLast {
-//            def flavorAndBuildType = task.name.substring("create".length(), task.name.length() - "MainDexClassList".length())
-            def flavorAndBuildType = task.name.substring("transformClassesWithMultidexlistFor".length(), task.name.length())
-            autoSplitDex.configure {
-                description = flavorAndBuildType
-            }
-            autoSplitDex.execute()
-        }
-    }
-}
+//tasks.whenTaskAdded { task ->
+////    if (task.name.startsWith("create") && task.name.endsWith("MainDexClassList")) {
+//    if (task.name.startsWith("transformClassesWithMultidexlistFor")) {
+//        task.doLast {
+////            def flavorAndBuildType = task.name.substring("create".length(), task.name.length() - "MainDexClassList".length())
+//            def flavorAndBuildType = task.name.substring("transformClassesWithMultidexlistFor".length(), task.name.length())
+//            autoSplitDex.configure {
+//                description = flavorAndBuildType
+//            }
+//            autoSplitDex.execute()
+//        }
+//    }
+//}
 
 
 dependencies {
@@ -48,15 +53,17 @@ dependencies {
     compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'io.reactivex:rxjava:1.1.0'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+
     //dagger相关
-    apt "com.google.dagger:dagger-compiler:2.6"
+    provided "com.google.dagger:dagger-compiler:2.6"
     // https://mvnrepository.com/artifact/com.google.dagger/dagger
     compile 'com.google.dagger:dagger:2.6'
     provided 'org.glassfish:javax.annotation:10.0-b28'
 
-    //butterknife
-    compile 'com.jakewharton:butterknife:8.0.1'
-    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+
 
     compile 'com.android.support:multidex:1.0.1'
 }

@@ -3,4 +3,17 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <!--对应activity的名称加其中变量名称变小写-->
+    <TextView
+        android:text="@string/textview_string"
+        android:id="@+id/butterknife_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="@string/button_string"
+        android:id="@+id/butterknife_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
