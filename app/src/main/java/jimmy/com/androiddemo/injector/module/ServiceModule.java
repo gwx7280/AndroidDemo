@@ -1,10 +1,10 @@
-package jimmy.com.androiddemo.mvp.injector.module;
+package jimmy.com.androiddemo.injector.module;
 
 import android.app.Service;
 
 import dagger.Module;
 import dagger.Provides;
-import jimmy.com.androiddemo.mvp.injector.PerService;
+import jimmy.com.androiddemo.injector.PerService;
 
 /**
  * Created by jimmypangpang on 16/7/29.

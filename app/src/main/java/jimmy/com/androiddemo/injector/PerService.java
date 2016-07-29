@@ -1,4 +1,4 @@
-package jimmy.com.androiddemo.mvp.injector;
+package jimmy.com.androiddemo.injector;
 
 import java.lang.annotation.Retention;
 

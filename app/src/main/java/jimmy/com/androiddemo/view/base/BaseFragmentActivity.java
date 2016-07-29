@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
 import jimmy.com.androiddemo.DemoApplication;
-import jimmy.com.androiddemo.mvp.injector.component.ActivityComponent;
-import jimmy.com.androiddemo.mvp.injector.component.DaggerActivityComponent;
-import jimmy.com.androiddemo.mvp.injector.module.ActivityModule;
+import jimmy.com.androiddemo.injector.component.ActivityComponent;
+import jimmy.com.androiddemo.injector.component.DaggerActivityComponent;
+import jimmy.com.androiddemo.injector.module.ActivityModule;
 
 /**
  * Created by jimmypangpang on 16/7/29.

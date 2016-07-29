@@ -1,4 +1,4 @@
-package jimmy.com.androiddemo.mvp.injector.module;
+package jimmy.com.androiddemo.injector.module;
 
 import android.content.Context;
 
@@ -7,7 +7,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import jimmy.com.androiddemo.DemoApplication;
-import jimmy.com.androiddemo.mvp.injector.ContextLife;
+import jimmy.com.androiddemo.injector.ContextLife;
 
 /**
  * Created by jimmypangpang on 16/7/27.

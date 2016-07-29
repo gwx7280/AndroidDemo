@@ -1,8 +1,8 @@
-package jimmy.com.androiddemo.mvp.injector.component;
+package jimmy.com.androiddemo.injector.component;
 
 import dagger.Component;
-import jimmy.com.androiddemo.mvp.injector.PerFragment;
-import jimmy.com.androiddemo.mvp.injector.module.AppModule;
+import jimmy.com.androiddemo.injector.PerFragment;
+import jimmy.com.androiddemo.injector.module.AppModule;
 import jimmy.com.androiddemo.view.base.BaseFragment;
 
 /**

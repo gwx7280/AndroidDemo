@@ -2,9 +2,9 @@ package jimmy.com.androiddemo;
 
 import android.app.Application;
 
-import jimmy.com.androiddemo.mvp.injector.component.AppComponent;
-import jimmy.com.androiddemo.mvp.injector.component.DaggerAppComponent;
-import jimmy.com.androiddemo.mvp.injector.module.AppModule;
+import jimmy.com.androiddemo.injector.component.AppComponent;
+import jimmy.com.androiddemo.injector.component.DaggerAppComponent;
+import jimmy.com.androiddemo.injector.module.AppModule;
 
 /**
  * Created by jimmypangpang on 16/7/22.

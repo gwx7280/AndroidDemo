@@ -1,4 +1,4 @@
-package jimmy.com.androiddemo.mvp.injector.module;
+package jimmy.com.androiddemo.injector.module;
 
 import android.app.Fragment;
 

@@ -1,12 +1,12 @@
-package jimmy.com.androiddemo.mvp.injector.component;
+package jimmy.com.androiddemo.injector.component;
 
 import android.app.Activity;
 
 
 import dagger.Component;
-import jimmy.com.androiddemo.mvp.injector.ContextLife;
-import jimmy.com.androiddemo.mvp.injector.PerActivity;
-import jimmy.com.androiddemo.mvp.injector.module.ActivityModule;
+import jimmy.com.androiddemo.injector.ContextLife;
+import jimmy.com.androiddemo.injector.PerActivity;
+import jimmy.com.androiddemo.injector.module.ActivityModule;
 import jimmy.com.androiddemo.view.base.BaseActivity;
 import jimmy.com.androiddemo.view.base.BaseFragmentActivity;
 

@@ -6,7 +6,7 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 
 import jimmy.com.androiddemo.DemoApplication;
-import jimmy.com.androiddemo.mvp.injector.component.DaggerServiceComponent;
+import jimmy.com.androiddemo.injector.component.DaggerServiceComponent;
 
 /**
  * Created by jimmypangpang on 16/7/29.

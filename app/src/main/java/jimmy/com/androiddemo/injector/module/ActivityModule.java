@@ -1,11 +1,11 @@
-package jimmy.com.androiddemo.mvp.injector.module;
+package jimmy.com.androiddemo.injector.module;
 
 import android.app.Activity;
 
 import dagger.Module;
 import dagger.Provides;
-import jimmy.com.androiddemo.mvp.injector.ContextLife;
-import jimmy.com.androiddemo.mvp.injector.PerActivity;
+import jimmy.com.androiddemo.injector.ContextLife;
+import jimmy.com.androiddemo.injector.PerActivity;
 
 /**
  * Created by jimmypangpang on 16/7/29.

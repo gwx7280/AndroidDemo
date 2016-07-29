@@ -1,8 +1,8 @@
-package jimmy.com.androiddemo.mvp.injector.component;
+package jimmy.com.androiddemo.injector.component;
 
 import dagger.Component;
-import jimmy.com.androiddemo.mvp.injector.PerService;
-import jimmy.com.androiddemo.mvp.injector.module.ServiceModule;
+import jimmy.com.androiddemo.injector.PerService;
+import jimmy.com.androiddemo.injector.module.ServiceModule;
 import jimmy.com.androiddemo.view.base.BaseService;
 
 /**

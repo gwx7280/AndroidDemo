@@ -1,4 +1,4 @@
-package jimmy.com.androiddemo.mvp.injector;
+package jimmy.com.androiddemo.injector;
 
 /**
  * Created by jimmypangpang on 16/7/27.
