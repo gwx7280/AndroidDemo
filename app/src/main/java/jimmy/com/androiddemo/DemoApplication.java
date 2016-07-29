@@ -9,7 +9,7 @@ import jimmy.com.androiddemo.mvp.injector.module.AppModule;
 /**
  * Created by jimmypangpang on 16/7/22.
  */
-public class DemoApplication extends Application{
+public class DemoApplication extends Application {
 
     private static DemoApplication demoApplication;
 
@@ -19,12 +19,16 @@ public class DemoApplication extends Application{
     public void onCreate() {
         super.onCreate();
         demoApplication = this;
+        initDagger();
+    }
+
+    private void initDagger() {
         mApplicationComponent = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
                 .build();
     }
 
-    public static DemoApplication getInstance(){
+    public static DemoApplication getInstance() {
         return demoApplication;
     }
 
