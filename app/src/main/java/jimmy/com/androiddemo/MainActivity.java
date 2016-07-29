@@ -10,7 +10,7 @@ import jimmy.com.androiddemo.view.base.BaseActivity;
 public class MainActivity extends BaseActivity {
 
     @BindView(value = R.id.hello)
-    TextView hello;
+    public TextView hello;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

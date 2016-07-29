@@ -19,10 +19,10 @@ public class ButterKnifeActivity extends BaseActivity {
 
 
     @BindView(value = R.id.butterknife_textview)
-    private TextView textview;
+    public TextView textview;
 
     @BindView(value = R.id.butterknife_button)
-    private Button button;
+    public Button button;
 
 
     @Override
